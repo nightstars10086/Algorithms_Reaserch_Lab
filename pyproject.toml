@@ -1,0 +1,17 @@
+[project]
+name = "algorithm-research-lab"
+version = "0.1.0"
+description = "A learning lab for understanding algorithm scenarios, implementation logic, examples, and tests."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
